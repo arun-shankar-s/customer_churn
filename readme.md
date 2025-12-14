@@ -12,6 +12,7 @@ Built with **Python, Scikit-learn, FastAPI, Streamlit**, and deployed using **Ra
 
 - **Web App (Streamlit):**  
   👉 Deployed via Streamlit Cloud
+  https://customerchurn-1221.streamlit.app/
 
 ---
 
@@ -36,37 +37,6 @@ FastAPI REST API
 ML Model (Logistic Regression)
 ↓
 Churn Probability + Risk Insights
-
-yaml
-Copy code
-
----
-
-## 📁 Project Structure
-
-customer_churn/
-│
-├── data/
-│ ├── raw/
-│ └── processed/
-│
-├── notebooks/
-│ ├── 1_EDA.ipynb
-│ ├── 2_Preprocessing.ipynb
-│ ├── 3_Modeling.ipynb
-│ └── 4_Evaluation.ipynb
-│
-├── models/
-│ ├── logistic_regression_model.pkl
-│ ├── scaler.pkl
-│ └── columns.pkl
-│
-├── api/
-│ └── app.py # FastAPI backend
-│
-├── streamlit_app.py # Streamlit frontend
-├── requirements.txt
-└── README.md
 
 yaml
 Copy code
@@ -144,11 +114,13 @@ Copy code
 }
 Response
 
-json
-Copy code
+
 {
   "churn_probability": 0.76
 }
+
+
+
 🎨 Streamlit UI Highlights
 Clean multi-section layout
 
