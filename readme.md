@@ -94,12 +94,12 @@ POST /predict
   "contract": "Month-to-month",
   "paperlessbilling": "Yes",
   "paymentmethod": "Electronic check"
-}
+```}```
 
 
-{
+```{```
   "churn_probability": 0.76
-} 
+```}```
 
 
 ---
