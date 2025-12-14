@@ -86,11 +86,9 @@ Copy code
 **Endpoint**
 POST /predict
 
-pgsql
-Copy code
 
 **Sample Request**
-```json
+json
 {
   "seniorcitizen": 0,
   "tenure": 12,
@@ -119,7 +117,7 @@ Response
   "churn_probability": 0.76
 }
 
-
+---
 
 🎨 Streamlit UI Highlights
 Clean multi-section layout
