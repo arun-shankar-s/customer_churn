@@ -28,21 +28,6 @@ The goal of this project is to:
 
 ---
 
-## 🏗️ Project Architecture
-
-User (Streamlit UI)
-↓
-FastAPI REST API
-↓
-ML Model (Logistic Regression)
-↓
-Churn Probability + Risk Insights
-
-yaml
-Copy code
-
----
-
 ## 🔍 Key Features
 
 ### ✅ Machine Learning
@@ -88,8 +73,8 @@ POST /predict
 
 
 **Sample Request**
-\`\`\`json
-{
+```json```
+```{```
   "seniorcitizen": 0,
   "tenure": 12,
   "monthlycharges": 70.5,
@@ -114,7 +99,7 @@ POST /predict
 
 {
   "churn_probability": 0.76
-} \`\`\`
+} 
 
 
 ---
