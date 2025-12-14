@@ -3,9 +3,9 @@ import pandas as pd
 import joblib
 
 # Load artifacts
-model = joblib.load("../models/logistic_regression_model.pkl")
-columns = joblib.load("../models/columns.pkl")
-scaler = joblib.load("../models/scaler.pkl")
+model = joblib.load("models/logistic_regression_model.pkl")
+scaler = joblib.load("models/scaler.pkl")
+columns = joblib.load("models/columns.pkl")
 num_cols = ['seniorcitizen', 'tenure', 'monthlycharges', 'totalcharges']
 columns = [c for c in columns if c != "churn"]
 
