@@ -88,7 +88,7 @@ POST /predict
 
 
 **Sample Request**
-json
+```json
 {
   "seniorcitizen": 0,
   "tenure": 12,
@@ -115,52 +115,34 @@ Response
 
 {
   "churn_probability": 0.76
-}
+} ```
+
 
 ---
 
-🎨 Streamlit UI Highlights
-Clean multi-section layout
+### 🎨 Streamlit UI Highlights
 
-Field explanations via expandable help panel
+- Clean multi-section layout
+- Field explanations via expandable help panel
+- Churn probability metric
+- Churn reasoning explanation
+- Downloadable churn report
+- Custom background styling
 
-Churn probability metric
+### 🛠️ Tech Stack
 
-Churn reasoning explanation
+- Python
+- Pandas / NumPy
+- Scikit-learn
+- FastAPI
+- Streamlit
+- Joblib
+- Railway
+- Streamlit Cloud
 
-Downloadable churn report
 
-Custom background styling
 
-🛠️ Tech Stack
-Python
-
-Pandas / NumPy
-
-Scikit-learn
-
-FastAPI
-
-Streamlit
-
-Joblib
-
-Railway
-
-Streamlit Cloud
-
-📌 Future Improvements
-SHAP-based explainability
-
-Advanced models (XGBoost, LightGBM)
-
-User authentication
-
-Customer segmentation dashboard
-
-Monitoring & drift detection
-
-👤 Author
+### 👤 Author
 Arun
 Machine Learning & AI Enthusiast
 Built as a foundation ML project for real-world deployment & interviews.
