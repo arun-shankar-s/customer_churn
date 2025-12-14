@@ -1,0 +1,2 @@
+seniorcitizen,tenure,monthlycharges,totalcharges,gender,partner,dependents,phoneservice,multiplelines,internetservice,onlinesecurity,onlinebackup,deviceprotection,techsupport,streamingtv,streamingmovies,contract,paperlessbilling,paymentmethod,churn_probability,risk_level
+0,12,70.5,800.0,Male,Yes,No,Yes,No,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check,0.77,High
