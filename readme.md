@@ -110,7 +110,6 @@ POST /predict
   "paperlessbilling": "Yes",
   "paymentmethod": "Electronic check"
 }
-Response
 
 
 {
