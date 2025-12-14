@@ -64,7 +64,9 @@ st.subheader("👤 Customer Profile")
 
 col1, col2 = st.columns(2)
 with col1:
-    seniorcitizen = st.selectbox("Senior Citizen", [0, 1])
+    seniorcitizen_ui = st.selectbox("Senior Citizen", ["No", "Yes"])
+    seniorcitizen = 1 if seniorcitizen_ui == "Yes" else 0
+    
     gender = st.selectbox("Gender", ["Male", "Female"])
     partner = st.selectbox("Partner", ["Yes", "No"])
     dependents = st.selectbox("Dependents", ["Yes", "No"])
@@ -104,7 +106,7 @@ with col6:
 # -------------------------------
 # PREDICTION
 # -------------------------------
-if st.button("🚀 Predict Churn Probability"):
+if st.button(" Predict Churn Probability"):
 
     payload = {
         "seniorcitizen": seniorcitizen,
@@ -134,12 +136,12 @@ if st.button("🚀 Predict Churn Probability"):
         prob = response.json()["churn_probability"]
 
         st.markdown("---")
-        st.metric("📊 Churn Probability", f"{prob:.2f}")
+        st.metric("📊 Churn Probability", f"{prob*100:.2f}")
 
         # -------------------------------
         # 🧠 WHY THIS CUSTOMER MAY CHURN
         # -------------------------------
-        st.subheader("🧠 Why this customer may churn")
+        st.subheader(" Why this customer may churn")
 
         reasons = []
 
@@ -166,8 +168,8 @@ if st.button("🚀 Predict Churn Probability"):
         # 🧾 DOWNLOAD REPORT
         # -------------------------------
         report = payload.copy()
-        report["churn_probability"] = round(prob, 2)
-        report["risk_level"] = "High" if prob > 0.6 else "Medium" if prob > 0.4 else "Low"
+        report["churn_probability"] = round(prob*100, 2)
+        report["risk_level"] = "High" if prob*100 > 60 else "Medium" if prob*100 > 40 else "Low"
 
         report_df = pd.DataFrame([report])
 
