@@ -88,7 +88,7 @@ POST /predict
 
 
 **Sample Request**
-```json
+\`\`\`json
 {
   "seniorcitizen": 0,
   "tenure": 12,
@@ -114,7 +114,7 @@ POST /predict
 
 {
   "churn_probability": 0.76
-} ```
+} \`\`\`
 
 
 ---
