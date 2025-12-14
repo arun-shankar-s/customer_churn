@@ -40,7 +40,7 @@ def set_bg(image_path):
         unsafe_allow_html=True
     )
 
-set_bg("assets/background.jpg")
+set_bg("assets/background.png")
 
 st.markdown("---")
 
