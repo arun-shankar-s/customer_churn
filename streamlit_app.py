@@ -136,7 +136,7 @@ if st.button(" Predict Churn Probability"):
         prob = response.json()["churn_probability"]
 
         st.markdown("---")
-        st.metric("📊 Churn Probability", f"{prob:.2f}")
+        st.metric("📊 Churn Probability", f"{prob*100:.2f}%")
 
         # -------------------------------
         # 🧠 WHY THIS CUSTOMER MAY CHURN
