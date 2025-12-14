@@ -1,40 +1,46 @@
 import streamlit as st
 import requests
 import pandas as pd
+import base64
 
 API_URL = "https://customerchurn-production.up.railway.app/predict"
 
 st.set_page_config(page_title="Customer Churn Predictor", layout="centered")
 
 st.title("📡 Customer Churn Prediction App")
+st.markdown(
+    "<small>Built with Machine Learning • FastAPI • Streamlit • Deployed on Railway</small>",
+    unsafe_allow_html=True
+)
 st.caption("Predict the likelihood of a customer leaving and understand why.")
 st.caption("Predict the probability of a customer cancelling their subscription")
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background: linear-gradient(
-            135deg,
-            #0f2027,
-            #203a43,
-            #2c5364
-        );
-        color: white;
-    }
 
-    h1, h2, h3, h4, h5, h6, p, label {
-        color: white !important;
-    }
 
-    div[data-testid="stMetricValue"] {
-        color: #00ffcc !important;
-    }
+def set_bg(image_path):
+    with open(image_path, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode()
 
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/jpg;base64,{encoded}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }}
+
+        h1, h2, h3, h4, h5, h6, p, label {{
+            color: white !important;
+        }}
+
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+set_bg("assets/background.jpg")
 
 st.markdown("---")
 
