@@ -8,62 +8,43 @@ st.write("Enter customer details below to predict churn probability.")
 
 with st.expander("ℹ️ What do these fields mean?"):
     st.markdown("""
-    **Senior Citizen**  
-    Whether the customer is a senior citizen (1 = Yes, 0 = No).
+    **Senior Citizen**  - Whether the customer is a senior citizen (1 = Yes, 0 = No).
 
-    **Tenure**  
-    Number of months the customer has stayed with the company.
+    **Tenure**  - Number of months the customer has stayed with the company.
 
-    **Monthly Charges**  
-    The amount billed to the customer every month.
+    **Monthly Charges**  - The amount billed to the customer every month.
 
-    **Total Charges**  
-    Overall amount the customer has paid so far.
+    **Total Charges**  - Overall amount the customer has paid so far.
 
-    **Gender**  
-    Customer gender information.
+    **Gender**  - Customer gender information.
 
-    **Partner**  
-    Whether the customer has a partner (Yes/No).
+    **Partner**  - Whether the customer has a partner (Yes/No).
 
-    **Dependents**  
-    Whether the customer has dependents (children, family members).
+    **Dependents**  - Whether the customer has dependents (children, family members).
 
-    **Phone Service**  
-    Whether the customer has a phone service plan.
+    **Phone Service**  - Whether the customer has a phone service plan.
 
-    **Multiple Lines**  
-    Whether the customer uses multiple phone lines.
+    **Multiple Lines**  - Whether the customer uses multiple phone lines.
 
-    **Internet Service**  
-    Type of internet service (DSL, Fiber optic, None).
+    **Internet Service**  - Type of internet service (DSL, Fiber optic, None).
 
-    **Online Security**  
-    Whether the customer has online security addon service.
+    **Online Security**  - Whether the customer has online security addon service.
 
-    **Online Backup**  
-    Whether the customer has cloud backup service.
+    **Online Backup**  - Whether the customer has cloud backup service.
 
-    **Device Protection**  
-    Whether the customer has device protection plan.
+    **Device Protection**  - Whether the customer has device protection plan.
 
-    **Tech Support**  
-    Whether tech support is included in their plan.
+    **Tech Support**  - Whether tech support is included in their plan.
 
-    **Streaming TV**  
-    Access to TV streaming services.
+    **Streaming TV**  - Access to TV streaming services.
 
-    **Streaming Movies**  
-    Access to movie streaming services.
+    **Streaming Movies**  - Access to movie streaming services.
 
-    **Contract**  
-    Type of contract (Month-to-month, One year, Two year).
+    **Contract**  - Type of contract (Month-to-month, One year, Two year).
 
-    **Paperless Billing**  
-    Whether customer uses paperless billing.
+    **Paperless Billing**  - Whether customer uses paperless billing.
 
-    **Payment Method**  
-    Payment type such as electronic check, mailed check, automatic card/bank.
+    **Payment Method**  - Payment type such as electronic check, mailed check, automatic card/bank.
     """)
 
 
