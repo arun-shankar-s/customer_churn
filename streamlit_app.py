@@ -10,6 +10,32 @@ st.title("📡 Customer Churn Prediction App")
 st.caption("Predict the likelihood of a customer leaving and understand why.")
 st.caption("Predict the probability of a customer cancelling their subscription")
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(
+            135deg,
+            #0f2027,
+            #203a43,
+            #2c5364
+        );
+        color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: white !important;
+    }
+
+    div[data-testid="stMetricValue"] {
+        color: #00ffcc !important;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown("---")
 
 # ---------- HELP SECTION ----------
